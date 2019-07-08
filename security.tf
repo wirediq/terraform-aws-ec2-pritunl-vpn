@@ -6,7 +6,7 @@
 # Security Groups
 #
 module "sg_private" {
-  source = "git::git@github.com:binbashar/bb-devops-tf-modules.git//aws/sg-bb?ref=v0.5"
+  source = "git::git@github.com:binbashar/terraform-aws-sec-groups.git?ref=v0.0.2"
 
   security_group_name     = "${var.sg_private_name}"
   tcp_ports               = "${var.sg_private_tpc_ports}"
@@ -18,7 +18,7 @@ module "sg_private" {
 }
 
 module "sg_public" {
-  source = "git::git@github.com:binbashar/bb-devops-tf-modules.git//aws/sg-bb?ref=v0.5"
+  source = "git::git@github.com:binbashar/terraform-aws-sec-groups.git?ref=v0.0.2"
 
   security_group_name     = "${var.sg_public_name}"
   tcp_ports               = "${var.sg_public_tpc_ports}"
