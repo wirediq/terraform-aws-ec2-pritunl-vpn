@@ -29,14 +29,12 @@ Creates an instance that can be logged into with the username `ubuntu` and the c
 | aws\_vpc\_public\_subnets | List of IDs of public subnets | list | `<list>` | no |
 | environment | Environment Name | string | n/a | yes |
 | instance\_dns\_record\_name\_1 | Route53 DNS record name | string | n/a | yes |
-| instance\_dns\_record\_name\_1\_enabled | Route53 DNS record name if set to true, otherwise don't use any specific tag | string | `"false"` | no |
 | instance\_dns\_record\_name\_2 | Route53 DNS record name | string | n/a | yes |
-| instance\_dns\_record\_name\_2\_enabled | Route53 DNS record name if set to true, otherwise don't use any specific tag | string | `"false"` | no |
 | instance\_type | AWS EC2 Instance Type | string | `"t2.micro"` | no |
 | sg\_private\_cidrs | Security group CIDR segments | string | `""` | no |
 | sg\_private\_name | Security group name | string | `"vpn-private"` | no |
 | sg\_private\_tpc\_ports | Security group TCP ports | string | `"22,443"` | no |
-| sg\_private\_udp\_ports | Security group UDP ports | string | `"default_null"` | no |
+| sg\_private\_udp\_ports | Security group UDP ports | string | `""` | no |
 | sg\_public\_cidrs | Security group CIDR segments | string | `"0.0.0.0/0"` | no |
 | sg\_public\_name | Security group name | string | `"vpn-public"` | no |
 | sg\_public\_temporary\_cidrs | Security group CIDR segments | string | `"0.0.0.0/0"` | no |

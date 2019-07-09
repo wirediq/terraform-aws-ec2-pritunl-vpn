@@ -72,7 +72,7 @@ variable "sg_private_tpc_ports" {
 
 variable "sg_private_udp_ports" {
   description = "Security group UDP ports"
-  default     = "default_null"
+  default     = ""
 }
 
 variable "sg_private_cidrs" {
@@ -140,20 +140,10 @@ variable "aws_key_pair_name" {
 #=============================#
 # DNS                         #
 #=============================#
-variable "instance_dns_record_name_1_enabled" {
-  description = "Route53 DNS record name if set to true, otherwise don't use any specific tag"
-  default     = "false"
-}
-
 variable "instance_dns_record_name_1" {
   description = "Route53 DNS record name"
 
   //    default   = "vpn.aws.binbash.com.ar"
-}
-
-variable "instance_dns_record_name_2_enabled" {
-  description = "Route53 DNS record name if set to true, otherwise don't use any specific tag"
-  default     = "false"
 }
 
 variable "instance_dns_record_name_2" {
