@@ -52,6 +52,7 @@ Creates an instance that can be logged into with the username `ubuntu` and the c
 |------|-------------|
 | public\_ip | Contains the public IP address. |
 
+
 ## Examples
 ### EC2 Pritunl VPN
 #### ec2-pritunl-vpn
