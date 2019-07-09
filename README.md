@@ -84,9 +84,7 @@ module "ec2_openvpn" {
   sg_public_temporary_tpc_ports      = "${var.sg_public_temporary_tpc_ports}"
   sg_public_temporary_cidrs          = "${var.sg_public_temporary_cidrs}"
   aws_key_pair_name                  = "${data.terraform_remote_state.security.aws_key_pair_name}"
-  instance_dns_record_name_1_enabled = "${var.instance_dns_record_name_1_enabled}"
   instance_dns_record_name_1         = "${var.instance_dns_record_name_1}"
-  instance_dns_record_name_2_enabled = "${var.instance_dns_record_name_2_enabled}"
   instance_dns_record_name_2         = "${var.instance_dns_record_name_2}"
   tags                               = "${local.tags}"
 }
