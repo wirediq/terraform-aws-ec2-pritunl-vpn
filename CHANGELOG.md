@@ -2,6 +2,12 @@
 ## [Unreleased]
 
 
+<a name="v0.0.10"></a>
+## [v0.0.10] - 2019-11-15
+### Pull Requests
+- Merge pull request [#2](https://github.com/binbashar/terraform-aws-pritunl-openvpn/issues/2) from binbashar/BBL-152-sg-module-composition-fix
+
+
 <a name="v0.0.9"></a>
 ## [v0.0.9] - 2019-11-15
 ### Pull Requests
@@ -32,7 +38,8 @@
 <a name="v0.0.1"></a>
 ## v0.0.1 - 2019-04-10
 
-[Unreleased]: https://github.com/binbashar/terraform-aws-pritunl-openvpn/compare/v0.0.9...HEAD
+[Unreleased]: https://github.com/binbashar/terraform-aws-pritunl-openvpn/compare/v0.0.10...HEAD
+[v0.0.10]: https://github.com/binbashar/terraform-aws-pritunl-openvpn/compare/v0.0.9...v0.0.10
 [v0.0.9]: https://github.com/binbashar/terraform-aws-pritunl-openvpn/compare/v0.0.8...v0.0.9
 [v0.0.8]: https://github.com/binbashar/terraform-aws-pritunl-openvpn/compare/v0.0.7...v0.0.8
 [v0.0.7]: https://github.com/binbashar/terraform-aws-pritunl-openvpn/compare/v0.0.6...v0.0.7
