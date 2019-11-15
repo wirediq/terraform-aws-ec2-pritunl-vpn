@@ -18,7 +18,7 @@ module "sg_private" {
 }
 
 module "sg_public" {
-  source = "git::git@github.com:binbashar/terraform-aws-sec-groups.git?ref=v0.0.2"
+  source = "git::https://github.com/binbashar/terraform-aws-sec-groups.git?ref=v0.0.2"
 
   security_group_name = "${var.sg_public_name}"
   tcp_ports           = "${var.sg_public_tpc_ports}"
