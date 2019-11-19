@@ -17,7 +17,7 @@ resource "aws_route53_record" "pritunl-openvpn" {
   name    = "${var.instance_dns_record_name_1}"
   type    = "A"
   ttl     = "300"
-  records = ["${aws_instance.openvpn_instance.public_ip}"]
+  records = ["${aws_eip.this.public_ip}"]
 }
 
 resource "aws_route53_record" "webhooks" {
@@ -26,5 +26,5 @@ resource "aws_route53_record" "webhooks" {
   name    = "${var.instance_dns_record_name_2}"
   type    = "A"
   ttl     = "300"
-  records = ["${aws_instance.openvpn_instance.public_ip}"]
+  records = ["${aws_eip.this.public_ip}"]
 }
